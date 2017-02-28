@@ -16,6 +16,6 @@ $: repo sync
 
 ### Goto to source directory and clone this meta layer:
 [source,console]
-$: git clone https://github.com/compulab-yokneam/meta-compulab
+$: git clone https://github.com/compulab/yocto-compulab-layer.git
 
 NOTE: Add the meta-compulab location to the conf/bblayers.conf manually.
