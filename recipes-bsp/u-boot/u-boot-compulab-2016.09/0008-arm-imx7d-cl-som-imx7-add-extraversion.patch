@@ -1,7 +1,7 @@
 From 662c6642f9728a4f0ecd674b05f7ed90cd7741cc Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 10 Oct 2016 10:57:13 +0300
-Subject: [PATCH 8/8] arm: imx7d: cl-som-imx7: add extraversion
+Subject: [PATCH 8/9] arm: imx7d: cl-som-imx7: add extraversion
 
 Add extraversion for cl-som-imx7.
 

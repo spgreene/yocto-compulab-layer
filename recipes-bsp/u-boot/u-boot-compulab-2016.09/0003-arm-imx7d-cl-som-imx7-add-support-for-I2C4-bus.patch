@@ -1,7 +1,7 @@
 From 6a2ba1436ba437508854894ea4e792b4d49d77f2 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 15 Feb 2016 08:38:30 +0200
-Subject: [PATCH 3/8] arm: imx7d: cl-som-imx7: add support for I2C4 bus
+Subject: [PATCH 3/9] arm: imx7d: cl-som-imx7: add support for I2C4 bus
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
 ---

@@ -7,4 +7,5 @@ SRC_URI_append_cl-som-imx7 += "file://cl_som_imx7_defconfig \
 	file://0006-arm-imx7d-cl-som-imx7-add-support-for-board-specific.patch \
 	file://0007-HACK-usb-ehci-mx6-do-not-initialize-otg2-port-for-iM.patch \
 	file://0008-arm-imx7d-cl-som-imx7-add-extraversion.patch \
+	file://0009-arm-imx7d-cl-som-imx7-add-support-for-watchdog.patch \
 "

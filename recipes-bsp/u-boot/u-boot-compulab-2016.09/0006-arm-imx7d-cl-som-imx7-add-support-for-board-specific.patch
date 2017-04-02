@@ -1,7 +1,7 @@
 From a4c121a2774d2f5fc72b54642ee221841ab275a7 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Sun, 25 Sep 2016 11:33:52 +0300
-Subject: [PATCH 6/8] arm: imx7d: cl-som-imx7: add support for board specific
+Subject: [PATCH 6/9] arm: imx7d: cl-som-imx7: add support for board specific
  device tree adjustment
 
 Implement board specific routine fdt_board_adjust() for adjusting

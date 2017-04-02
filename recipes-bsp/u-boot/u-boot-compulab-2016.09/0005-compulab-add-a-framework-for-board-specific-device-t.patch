@@ -1,7 +1,7 @@
 From 9785a16e5a37909eef9df438c65a3fbac8f35c79 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 22 Sep 2016 13:59:44 +0300
-Subject: [PATCH 5/8] compulab: add a framework for board specific device tree
+Subject: [PATCH 5/9] compulab: add a framework for board specific device tree
  adjustment
 
 Add a board independent framework that allows Compulab devices to

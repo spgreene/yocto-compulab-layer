@@ -1,7 +1,7 @@
 From 31e83471649ac24c09eca55f241713e191538ca2 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 6 Oct 2016 15:02:09 +0300
-Subject: [PATCH 7/8] HACK: usb: ehci-mx6: do not initialize otg2 port for iMX7
+Subject: [PATCH 7/9] HACK: usb: ehci-mx6: do not initialize otg2 port for iMX7
  Solo
 
 Number of ports that USB sub-system initializes is determined by

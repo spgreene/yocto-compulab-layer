@@ -1,7 +1,7 @@
 From 49c45c3a95de1075b74568d17b597bfa72e0f4c1 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Tue, 19 Jan 2016 09:22:33 +0200
-Subject: [PATCH 1/8] arm: imx7d: add support for Compulab cl-som-imx7
+Subject: [PATCH 1/9] arm: imx7d: add support for Compulab cl-som-imx7
 
 Add initial support for Compulab cl-som-imx7 SoM.
 The initial support includes:

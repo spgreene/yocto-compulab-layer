@@ -1,7 +1,7 @@
 From c4b528fa29f688f20b9127c6550d520a96d991c3 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Tue, 16 Feb 2016 13:52:34 +0200
-Subject: [PATCH 4/8] arm: imx7d: cl-som-imx7: add support for status LED
+Subject: [PATCH 4/9] arm: imx7d: cl-som-imx7: add support for status LED
 
 Add support for the on-board status LED. Swith the LED on
 at the end of board_init() routine.

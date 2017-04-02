@@ -1,7 +1,7 @@
 From 0e759edf986e66f77a566b09715b5c50ad888f8c Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 21 Jan 2016 13:45:38 +0200
-Subject: [PATCH 2/8] arm: imx7d: cl-som-imx7: add support for NAND flash
+Subject: [PATCH 2/9] arm: imx7d: cl-som-imx7: add support for NAND flash
 
 Add support for NAND flash as an alternative main storage device.
 Note eMMC and NAND are mutually excluding options because both
