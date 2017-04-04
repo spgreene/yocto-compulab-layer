@@ -3,8 +3,7 @@
 ## CompuLab NXP SoC based boards
 This layer can be used separatelly.
 
-* Provides
-MACHINE: cm-fx6-evk (kernel,u-boot), cl-som-imx6ul (kernel,u-boot), cl-som-imx7 (kernel,u-boot)
+* Provided MACHINE: cm-fx6-evk (kernel,u-boot), cl-som-imx6ul (kernel,u-boot), cl-som-imx7 (kernel,u-boot)
 
 ### First install the i.MX NXP BSP repo
 [source,console]
@@ -14,8 +13,48 @@ $: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-kro
 [source,console]
 $: repo sync
 
-### Goto to source directory and clone this meta layer:
+### Clone meta-compulab layer:
 [source,console]
-$: git clone https://github.com/compulab/yocto-compulab-layer.git meta-compulab
+$: git clone https://github.com/compulab/yocto-compulab-layer.git source/meta-compulab
 
-NOTE: Add the meta-compulab location to the conf/bblayers.conf manually.
+### Build Procedure
+#### Select an available machine: cm-fx6-evk/cl-som-imx6ul/cl-som-imx7
+[source,console]
+$: export MACHINE=cm-fx6-evk
+or
+$: export MACHINE=cl-som-imx6ul
+or
+$: export MACHINE=cl-som-imx7
+
+#### Select an available disptro: x11/fb/xwayland/wayland
+[source,console]
+$: export DISTRO=fsl-imx-x11
+or
+$: export DISTRO=fsl-imx-fb
+or
+$: export DISTRO=fsl-imx-xwayland
+or
+$: export DISTRO=fsl-imx-wayland
+
+#### Run i.MX NXP Yocto Project Setup:
+[source,console]
+$: source fsl-setup-release.sh -b build-${MACHINE}-${DISTRO}
+
+#### Pre-Build Steps
+* Add the meta-compulab location to the conf/bblayers.conf
+
+[source,console]
+$: [[ -f conf/bblayers.conf ]] && (sed -i '$aBBLAYERS += " ${BSPDIR}/sources/meta-compulab "' conf/bblayers.conf) || echo "Warning: Invalid Build Directory"
+
+WARNING: Stop Here if warning shows up
+
+* Add the second packaging option to the conf/local.conf
+
+[source,console]
+$: [[ -f conf/local.conf ]] && sed -i '/PACKAGE_CLASSES/ a PACKAGE_CLASSES += " package_deb"' conf/local.conf || echo "Warning: Invalid Build Directory"
+
+#### Build
+[source,console]
+$: bitbake fsl-image-gui
+or
+$: bitbake fsl-image-qt5
