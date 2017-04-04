@@ -18,13 +18,10 @@ $: repo sync
 $: git clone https://github.com/compulab/yocto-compulab-layer.git source/meta-compulab
 
 ### Build Procedure
-#### Select an available machine: cm-fx6-evk/cl-som-imx6ul/cl-som-imx7
+#### Select one of the supported machines: cm-fx6-evk, cl-som-imx6ul, cl-som-imx7
+IMPORTANT: Change the below <mach name> to the actual supported machine name.
 [source,console]
-$: export MACHINE=cm-fx6-evk
-or
-$: export MACHINE=cl-som-imx6ul
-or
-$: export MACHINE=cl-som-imx7
+$: export MACHINE=<mach name>
 
 #### Select an available disptro: x11/fb/xwayland/wayland
 [source,console]
