@@ -3,9 +3,9 @@
 ## CompuLab NXP SoC based boards
 This layer can be used separatelly.
 
-* Provided MACHINE: cm-fx6-evk (kernel,u-boot), cl-som-imx6ul (kernel,u-boot), cl-som-imx7 (kernel,u-boot)
+* Provided MACHINE: cm-fx6-evk, cl-som-imx6ul, cl-som-imx7, iot-gate-imx7, sbc-iot-imx7
 
-### First install the i.MX NXP BSP repo
+### Install the i.MX NXP BSP repo
 [source,console]
 $: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth
 
@@ -20,6 +20,9 @@ $: git clone https://github.com/compulab/yocto-compulab-layer.git source/meta-co
 ### Build Procedure
 #### Select one of the supported machines: cm-fx6-evk, cl-som-imx6ul, cl-som-imx7
 IMPORTANT: Change the below <mach name> to the actual supported machine name.
+
+NOTE: For *iot-gate-imx7* and *sbc-iot-imx7*, use *cl-som-imx7* target for <mach name>.
+
 [source,console]
 $: export MACHINE=<mach name>
 
