@@ -36,22 +36,14 @@ $: export DISTRO=fsl-imx-xwayland
 or
 $: export DISTRO=fsl-imx-wayland
 
-#### Run i.MX NXP Yocto Project Setup:
+#### Create Build Environment:
+* Issue `NXP` Setup Script
 [source,console]
 $: source fsl-setup-release.sh -b build-${MACHINE}-${DISTRO}
 
-#### Pre-Build Steps
-* Add the meta-compulab location to the conf/bblayers.conf
-
+* Issue `CompuLab` Setup Script
 [source,console]
-$: [[ -f conf/bblayers.conf ]] && (sed -i '$aBBLAYERS += " ${BSPDIR}/sources/meta-compulab "' conf/bblayers.conf) || echo "Warning: Invalid Build Directory"
-
-WARNING: Stop Here if warning shows up
-
-* Add the second packaging option to the conf/local.conf
-
-[source,console]
-$: [[ -f conf/local.conf ]] && sed -i '/PACKAGE_CLASSES/ a PACKAGE_CLASSES += " package_deb"' conf/local.conf || echo "Warning: Invalid Build Directory"
+$: source ../sources/meta-compulab/bb-tools/setup-compulab-env
 
 #### Build
 [source,console]
